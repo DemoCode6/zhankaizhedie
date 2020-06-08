@@ -1,0 +1,83 @@
+/* 优惠券 */
+.coupon{
+  width: 100%;
+  background-color: #fff;
+  margin: 17rpx 0;
+  font-size: 26rpx;
+}
+
+.fold{
+  width: 92%;
+  margin: auto;
+}
+
+.scrollFold{
+  height:100%;
+  width: 100%;
+}
+.fold .text{
+  width: 100%;
+  border-radius: 16rpx;
+  background:  rgb(233, 243, 253);
+  border: 2rpx solid  rgb(183, 220, 255);
+  box-sizing: border-box;
+}
+
+.youhui_quan text:nth-of-type(1){
+  display: inline-block;
+  width: 34rpx;
+  line-height: 36rpx;
+  color: #fff;
+  background-color: #ffc61c;
+  text-align: center;
+  margin: 35rpx 10rpx 25rpx 30rpx;
+}
+.see_more{
+  margin: 25rpx 0 0rpx;
+  text-align: center;
+  padding-bottom: 35rpx;
+}
+.see_more image{
+  width: 20rpx;
+  height: 20rpx;
+  vertical-align: middle;
+}
+
+/* 优惠券修改样式 */
+.yh_big_box{
+  padding: 32rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.yh_big_box .yh_title{
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 25rpx;
+}
+.yh_big_box_left .shugang{
+  color: #999;
+  margin: 0 10rpx;
+}
+.yh_xiaoshou{
+  color: rgb(52, 151, 250);
+  margin-top: 20rpx;
+}
+.yh_xiaoshou text:nth-of-type(1){
+  font-weight: bold;
+  font-size: 30rpx;
+  color: rgb(32, 142, 252);
+}
+.yh_xiaoshou text:nth-of-type(2){
+  background-color: rgb(224, 239, 253);
+  padding: 10rpx;
+  margin: 0 11rpx;
+}
+.yh_big_box_right view:nth-of-type(1){
+  width: 110rpx;
+  line-height: 53rpx;
+  text-align: center;
+  color: #fff;
+  background: rgb(52, 151, 250);
+  border-radius: 50rpx;
+  margin: 20rpx 0 5rpx;
+}

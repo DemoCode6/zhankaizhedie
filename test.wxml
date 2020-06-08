@@ -1,0 +1,38 @@
+<!-- 优惠券 -->
+<view class="coupon">
+	<view class="youhui_quan">
+		<text>券</text>
+		<text>代金券</text>
+	</view>
+
+	<view class='fold' style='height:{{!ischangeFold?((dataList.length>5)?225*5 +80 :(dataList.length)*225 + 80):225}}rpx'>
+		<scroll-view scroll-y class='scrollFold'>
+			<!-- bindconfirm是当前点击项相应的事件 -->
+			<view class="text" wx:for='{{dataList}}' wx:for-item='itemOp' wx:for-index='indexOp' wx:key='' style='transition: transform 300ms linear 0ms;transform: translateY({{ischangeFold?(indexOp)*5:indexOp*30 + 66}}rpx); transform-origin: 50% 50% 0px;z-index:{{20-indexOp}};' data-text='{{itemOp.text}}' data-indexop='{{indexOp}}'>
+				<!-- {{itemOp.text}} -->
+				<view class="yh_big_box">
+					<view class="yh_big_box_left">
+						<view class="yh_title">{{itemOp.yh_title}}</view>
+						<text>{{itemOp.yh_time}}</text>
+						<text class="shugang">|</text>
+						<text>{{itemOp.yh_single}}</text>
+						<view class="yh_xiaoshou">
+							<text>￥{{itemOp.yh_money}}</text>
+							<text>{{itemOp.yh_discount}}</text>
+							<text>{{itemOp.yh_limit}}</text>
+						</view>
+					</view>
+					<view class="yh_big_box_right">
+						<view>购买</view>
+						<view>{{itemOp.yh_sell}}</view>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+
+	<view catchtap='{{ischangeFold?"changeFold":"closeChangeFold"}}' class="see_more">
+		{{ischangeFold ? active_text:active_text1}}
+		<image src="{{ischangeFold ? active_img1:active_img}}"></image>
+	</view>
+</view>
